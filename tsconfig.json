@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "types": [
+      "node",
+      "next-auth",
+      "next/image"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "components/*": [
+        "components/*"
+      ],
+      "styles/*": [
+        "styles/*"
+      ],
+      "utils/*": [
+        "utils/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "next.config.mjs",
+    "pages/**/*.{js,ts,jsx,tsx}",
+    "components/**/*.{js,ts,jsx,tsx}",
+    "styles/**/*.{js,ts,jsx,tsx}",
+    "utils/**/*.{js,ts,jsx,tsx}",
+    "prisma/**/*.{js,ts,jsx,tsx}",
+    "**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
